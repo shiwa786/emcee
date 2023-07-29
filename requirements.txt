@@ -1,5 +1,5 @@
 # Pyrogram implimantion 
-pyrogram==2.0.106
+pyrogram
 tgcrypto 
 aiohttp
 
