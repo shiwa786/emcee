@@ -24,10 +24,10 @@ from Stella.plugins.greeting.captcha.button_captcha import \
 from Stella.plugins.greeting.captcha.text_captcha import textCaptchaRedirect
 from Stella.plugins.notes.private_notes import note_redirect
 from Stella.plugins.rules.rules import rulesRedirect
-from Stella.plugins.help.help import redirectHelp
+# from Stella.plugins.help.help import redirectHelp
 
 START_TEXT = (
-    "Heya {mention}! My name is Sam - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.\n\n Join my [News Channel](TheXBots) to get information on all the latest updates."
+    "Heya {mention}! My name is Elisa - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.\n\n Join my [News Channel](http://t.me/denvil_bots) to get information on all the latest updates."
 )
 
 @StellaCli.on_message(custom_filter.command(commands=('start')))
@@ -38,7 +38,7 @@ async def start(client, message):
         if message.chat.type == 'private':
             buttons = [[
                 InlineKeyboardButton(
-            text="Add Me To Your Chat", url="t.me/SamManekshawBot?startgroup=true"), 
+            text="Add Me To Your Chat", url="t.me/miselisarobot?startgroup=true"), 
 
                 ]]
             await message.reply_text(
@@ -57,11 +57,11 @@ async def start(client, message):
         len(message.command) > 1
     ):
         # # help
-        if startCheckQuery(message, StartQuery='help_'):
-            await redirectHelp(message)
+        # if startCheckQuery(message, StartQuery='help_'):
+        #     await redirectHelp(message)
             
         # Captcha Redirect Implementation 
-        elif startCheckQuery(message, StartQuery='captcha'):
+        if startCheckQuery(message, StartQuery='captcha'):
             await buttonCaptchaRedirect(message)
             await textCaptchaRedirect(message)
 
