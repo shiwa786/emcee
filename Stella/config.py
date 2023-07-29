@@ -31,7 +31,7 @@ class Config:
 
     OWNER_ID = int(getenv("OWNER_ID", "5497627952"))
     
-    BOT_TOKEN = getenv("BOT_TOKEN", "5643681960:AAEmdu_fXu-QaiQx0lBX9skXLyMQgQzjfRY")
+    BOT_TOKEN = getenv("BOT_TOKEN", "5643681960:AAHE17WODITJNlb2Og_DLTf1tKnLlTJ_ixQ"
     BOT_NAME = getenv("BOT_NAME", "Elisa")
     BOT_USERNAME= getenv("BOT_USERNAME", "AlexamachineRobot")
     BOT_ID = getenv("BOT_ID", "5643681960")
