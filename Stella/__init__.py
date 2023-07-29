@@ -32,7 +32,7 @@ from Stella.StellaGban import StellaClient
 APP_ID = Config.API_ID
 API_HASH = Config.API_HASH
 OWNER_ID = Config.OWNER_ID
-BOT_TOKEN = Config.BOT_TOKEN
+TOKEN = Config.BOT_TOKEN
 BOT_ID = Config.BOT_ID
 BOT_NAME = Config.BOT_NAME
 BOT_USERNAME = Config.BOT_USERNAME
@@ -43,15 +43,15 @@ DATABASE_URI = Config.DATABASE_URI
 BACKUP_CHAT = Config.BACKUP_CHAT
 StellaGbanAPI = Config.StellaGbanAPI
 
-session_name = BOT_TOKEN.split(":")[0]
+session_name = TOKEN.split(":")[0]
+
 
 StellaCli = Client(
-    session_name='StellaSession',
+    session_name,
     api_id=APP_ID,
     api_hash=API_HASH,
-    bot_token=BOT_TOKEN
+    bot_token=TOKEN,
 )
-
 pbot = StellaCli
 
 aiohttpsession = ClientSession()
