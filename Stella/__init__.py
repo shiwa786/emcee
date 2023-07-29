@@ -20,7 +20,7 @@ import sys
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from pymongo import MongoClient
 from pyrogram import Client
-from Pyroaddon import listen
+from pyroaddon import listen
 from aiohttp import ClientSession
 
 from Stella.config import Config
