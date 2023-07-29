@@ -12,7 +12,7 @@ urlextract
 requests
 emojis
 stellagban
-Pyroaddon
+pyroaddon
 pykeyboard 
 captcha
 apscheduler
