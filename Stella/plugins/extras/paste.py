@@ -32,7 +32,7 @@ async def isPreviewUp(preview: str) -> bool:
     return False
 
 
-@StellaCli.on_message(filters.command("paste") & ~filters.edited)
+@StellaCli.on_message(filters.command('paste')
 @capture_err
 async def paste_func(_, message):
     if not message.reply_to_message:
