@@ -43,6 +43,7 @@ DATABASE_URI = Config.DATABASE_URI
 BACKUP_CHAT = Config.BACKUP_CHAT
 StellaGbanAPI = Config.StellaGbanAPI
 
+session_name = BOT_TOKEN.split(":")[0]
 
 StellaCli = Client(
     session_name='StellaSession',
