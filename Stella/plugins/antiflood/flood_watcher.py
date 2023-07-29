@@ -33,7 +33,7 @@ class FloodControl:
     PREV_MSG_USER_ID = dict()
 
 
-@StellaCli.on_message(filters.group))
+@StellaCli.on_message(filters.group)
 async def FloodWatcher(client, message):
     if not message.from_user:
         return
