@@ -5,7 +5,7 @@ from Stella.pyrogramee.fetch import fetch
 from pyrogram import filters
 
 
-@Stellacli.on_message(filters.command('covid')
+@Stellacli.on_message(filters.command('covid'))
 @capture_err
 async def covid(_, message):
     if len(message.command) == 1:
