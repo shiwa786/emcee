@@ -26,23 +26,24 @@ else:
     load_dotenv()
 
 class Config:
-    API_ID =  int(getenv("API_ID"))
-    API_HASH = getenv("API_HASH")
+    API_ID =  int(getenv("API_ID", "4277083"))
+    API_HASH = getenv("API_HASH", "bb0ddae0921fc020ce61faae2d1261d5")
 
-    OWNER_ID = int(getenv("OWNER_ID"))
+    OWNER_ID = int(getenv("OWNER_ID", "5497627952"))
     
-    BOT_TOKEN = getenv("BOT_TOKEN")
-    BOT_NAME = getenv("BOT_NAME")
-    BOT_USERNAME= getenv("BOT_USERNAME")
-    BOT_ID = getenv("BOT_ID")
-    PREFIX = getenv("PRRFIX")
-    MONGO_URL = getenv("MONGO_URL")
-    DATABASE_URI = getenv("DATABASE_URI")
-    BACKUP_CHAT = getenv("BACKUP_CHAT")
+    TOKEN = getenv("TOKEN", "5643681960:AAEmdu_fXu-QaiQx0lBX9skXLyMQgQzjfRY")
+    BOT_NAME = getenv("BOT_NAME", "Elisa")
+    BOT_USERNAME= getenv("BOT_USERNAME", "AlexamachineRobot")
+    BOT_ID = getenv("BOT_ID", "5643681960")
+    PREFIX = getenv("PRRFIX", "/")
+    MONGO_URL = getenv("MONGO_URL", "mongodb+srv://devilking:2301820k@cluster1.fmtgisg.mongodb.net/?retryWrites=true&w=majority")
+    DATABASE_URI = getenv("DATABASE_URI", "mongodb+srv://devilking:2301820k@cluster1.fmtgisg.mongodb.net/?retryWrites=true&w=majority")
+    BACKUP_CHAT = getenv("BACKUP_CHAT", "-1001590206395")
 
     LOG_CHANNEL = getenv("LOG_CHANNEL", None)
 
-    SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
+    SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5497627952").split()))
+
 
     # APIs 
     StellaGbanAPI = getenv("StellaGbanAPI", None)
