@@ -20,7 +20,6 @@ import sys
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from pymongo import MongoClient
 from pyrogram import Client
-from pyromod import listen
 from aiohttp import ClientSession
 from Stella.helper.eor import eor
 from Stella.config import Config
