@@ -28,7 +28,7 @@ from Stella.StellaGban import StellaClient
 #from stellagban import StellaClient
 
 
-APP_ID = Config.API_ID
+API_ID = Config.API_ID
 API_HASH = Config.API_HASH
 OWNER_ID = Config.OWNER_ID
 BOT_TOKEN = Config.BOT_TOKEN
