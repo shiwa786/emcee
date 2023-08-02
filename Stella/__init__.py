@@ -43,7 +43,7 @@ BACKUP_CHAT = Config.BACKUP_CHAT
 StellaGbanAPI = Config.StellaGbanAPI
 
 
-pbot = Client("FallenRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+StellaCli = Client("FallenRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 
 pbot = StellaCli
 app = StellaCli
