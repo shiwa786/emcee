@@ -1,5 +1,5 @@
 # Pyrogram implimantion 
-pyrogram 
+pyrogram==1.4.16
 tgcrypto 
 aiohttp
 
@@ -12,7 +12,6 @@ urlextract
 requests
 emojis
 stellagban
-pyromod
 pykeyboard 
 captcha
 apscheduler
